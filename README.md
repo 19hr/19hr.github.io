@@ -1,4 +1,4 @@
-19hr.github.io - .&infinity
+19hr.github.io
 
 ==============
 
