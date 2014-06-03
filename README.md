@@ -1,30 +1,29 @@
-## Anchor CMS
+# Stacey 2.3.0
 
-Anchor is a super-simple, lightweight blog system, made to let you just write. [Check out the site](http://anchorcms.com/). 
+## Overview
+Stacey takes content from `.txt` files, image files and implied directory structure and generates a website.
+It is a no-database, dynamic website generator.
 
-### Requirements
+If you look in the `/content` and `/templates` folders, you should get the general idea of how it all works.
 
-- PHP 5.3.6+
-    - curl
-    - mcrypt
-    - gd
-    - pdo\_mysql or pdo\_sqlite
-- MySQL 5.2+
+## Installation
 
-To determine your PHP version, create a new file with this PHP code: `<?php echo PHP_VERSION; // version.php`. This will print your version number to the screen.
+Copy to server, `chmod 777 app/_cache`.
 
-### Install
+If you want clean urls, `mv htaccess .htaccess`
 
-1. Insure that you have the required components.
-2. Download Anchor either from [here](http://anchorcms.com/download) or by cloning this Github repo.
-3. Upload Anchor through FTP/SFTP or whatever upload method you prefer to the public-facing directory of your site.
-4. Ensure that the permissions for the `content` and `anchor/config` folders are set to `0777`.
-5. Create a database for Anchor to install to. You may name it anything you like. The method for database creation varies depending on your webhost but may require using PHPMyAdmin or Sequel Pro. If you are unsure of how to create this, ask your host.
-6. Navigate your browser to your Anchor installation URL, if you have placed Anchor in a sub directory make sure you append the folder name to the URL: `http://MYDOMAINNAME.com/anchor`
-7. Follow the installer instructions
-8. For security purposes, delete the `install` directory when you are done.
+## Templates
 
-### Problems?
+There are an additional two sets of templates which can be found at:
+<http://github.com/kolber/stacey-template2> &
+<http://github.com/kolber/stacey-template3>
 
-If you can't install Anchor, check the [forums](http://forums.anchorcms.com/); there's probably someone there who's had the same problem as you, and the community is always happy to help. Additionally, check out the [documentation](http://anchorcms.com/docs).
+## Read More
 
+See <http://staceyapp.com> for more detailed usage information.
+
+## Copyright/License
+
+Copyright (c) 2009 Anthony Kolber. See `LICENSE` for details.
+Except PHP Markdown Extra which is (c) Michel Fortin (see `/app/parsers/markdown-parser.inc.php` for details) and
+JSON.minify which is (c) Kyle Simpson (see 'app/parsers/json-minifier.inc.php' for details).
